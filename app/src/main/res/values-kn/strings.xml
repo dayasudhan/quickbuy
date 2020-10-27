@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bidar HFPC </string>
+    <string name="title_activity_location_search">Bidar HFPC</string>
+
+    <!--gagan-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Bidar HFPC</string>
+    <string name="slide_1_desc">The easiest way to order your Healthy favorite Meal !</string>
+
+    <string name="slide_2_title">Rotti uta :)</string>
+    <string name="slide_2_desc">Feel The Real Taste Of North Karnataka</string>
+
+    <string name="slide_3_title">Online</string>
+    <string name="slide_3_desc">Now eat your favorite north karnataka food at your home in few minutes</string>
+
+    <string name="slide_4_title">Lets Begin</string>
+    <string name="slide_4_desc"></string>
+    <string name="label_circle_rotate">CircleRotateActivity</string>
+    <string name="label_circle_jump">CircleJumpActivity</string>
+    <string name="label_scenery">SceneryActivity</string>
+    <string name="label_animal">AnimalActivity</string>
+    <string name="label_goods">GoodsActivity</string>
+    <string name="label_shape_change">ShapeChangeActivity</string>
+
+
+</resources>

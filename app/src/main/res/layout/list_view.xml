@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/order_details_lay"
+    android:background="#fff"
+    tools:showIn="@layout/my_profile">
+    <RelativeLayout
+        android:padding="11dip"
+        android:layout_below="@id/firstLayout"
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Saved Address"
+            android:layout_alignParentStart="true"
+
+            android:padding="10dip"
+
+            android:id="@+id/textView4" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Address"
+            android:textColor="#ffffff"
+            android:id="@+id/addAddress"
+            android:background="@drawable/locationbuttonselector"
+            android:enabled="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:longClickable="false"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_alignParentEnd="true" />
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view2"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="10dp"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:id="@+id/listViewAddresProfile"
+            android:layout_centerHorizontal="true"
+            android:scrollbarSize="250dp"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/view2"
+        />
+
+
+        <TextView
+            android:id="@+id/emptyElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Address Available"
+            android:textColor="#525252"
+            android:textSize="19.0sp"
+            android:layout_below="@id/view2"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

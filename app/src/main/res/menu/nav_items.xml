@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item android:id="@+id/location"-->
+              <!--android:title="Location"-->
+              <!--android:icon="@drawable/ic_action_fab" />-->
+        <item android:id="@+id/hotel"
+            android:title="Home"
+            android:icon="@drawable/phome" />
+<!--        <item android:id="@+id/bulk_activity"-->
+
+<!--            android:title="Bulk"-->
+<!--            android:icon="@drawable/bulk_order" />-->
+       <!-- <item android:id="@+id/myprofile"
+            android:title="My Profile"
+            android:icon="@drawable/profilepng" />-->
+
+        <item android:id="@+id/status"
+            android:title="My Orders"
+            android:icon="@drawable/porderdetails" />
+
+        <item android:id="@+id/notification"
+            android:title="Notifications"
+            android:icon="@drawable/pnotifications" />
+
+
+
+        <item android:id="@+id/invite"
+            android:title="Invite"
+            android:icon="@drawable/pinvitation" />
+
+<!--        <item android:id="@+id/about_knvl"-->
+<!--            android:title="Help"-->
+<!--            android:icon="@drawable/phelp" />-->
+
+    </group>
+</menu>

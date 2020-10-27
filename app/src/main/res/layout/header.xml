@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:id="@+id/profileinfo"
+    android:background="@color/backgroundgagan"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/user_profile_photo"
+        android:background="@drawable/profile"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="My name"
+        android:id="@+id/myNameHeader"
+        android:layout_alignTop="@+id/user_profile_photo"
+        android:layout_toRightOf="@+id/user_profile_photo"
+        android:layout_toEndOf="@+id/user_profile_photo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="phone  no"
+        android:id="@+id/phNoHeader"
+        android:layout_alignBottom="@+id/user_profile_photo"
+        android:layout_alignLeft="@+id/eMailHeader"
+        android:layout_alignStart="@+id/eMailHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:id="@+id/eMailHeader"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/myNameHeader"
+        android:layout_alignStart="@+id/myNameHeader" />
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:src="@drawable/knvl2"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginTop="38dp"-->
+    <!--android:id="@+id/circleView"-->
+    <!--/>-->
+</RelativeLayout>

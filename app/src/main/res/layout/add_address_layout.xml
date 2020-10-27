@@ -1,0 +1,283 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rela"
+        android:background="@drawable/my_custom_background"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <include
+                android:id="@+id/toolbar2"
+                layout="@layout/toolbar" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:id="@+id/order_details_lay"
+                >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_custom_background"
+                android:padding="1dip"
+                android:id="@+id/address_details_layout"
+                >
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Address Details"-->
+                    <!--android:id="@+id/address_detail"-->
+                    <!--android:textSize="15sp"-->
+
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginTop="10dp" />-->
+                <!--&lt;!&ndash;<View&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="0.5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="@color/view_color"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+
+
+                    <!--&lt;!&ndash;android:layout_below="@+id/address_detail"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/view1" />&ndash;&gt;-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/address_detail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view10" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailAddress_house_no"
+                    android:textSize="15sp"
+                    android:inputType="textPostalAddress"
+                    android:hint="Enter House/Flat No"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/address_detail"
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/title_text_color"
+                    android:layout_marginTop="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignEnd="@+id/view10"
+                    android:layout_alignRight="@+id/view10"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentStart="false"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/orderDetailAddress_house_no"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignRight="@+id/view10"
+                    android:layout_alignEnd="@+id/view10"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view9" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailAddress_address"
+                    android:textSize="15sp"
+                    android:inputType="textPostalAddress"
+                    android:hint="Enter Address"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/orderDetailAddress_house_no"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/title_text_color"
+                    android:layout_marginTop="18dp"
+                    android:layout_alignRight="@+id/view9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignEnd="@+id/view9" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/orderDetailAddress_address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignEnd="@+id/view10"
+                    android:layout_alignRight="@+id/view10"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view8" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailAddress_areaname"
+                    android:textSize="15sp"
+                    android:inputType="textPostalAddress"
+                    android:hint="Enter Areaname"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/orderDetailAddress_address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/title_text_color"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/view8"
+                    android:layout_alignEnd="@+id/view8" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/orderDetailAddress_areaname"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignEnd="@+id/view10"
+                    android:layout_alignRight="@+id/view10"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view6" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailAddress_landmark"
+                    android:textSize="15sp"
+                    android:inputType="textPostalAddress"
+                    android:hint="Enter Locality/Landmark"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/orderDetailAddress_areaname"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="@color/title_text_color"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignRight="@+id/view6"
+                    android:layout_alignEnd="@+id/view6" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/orderDetailAddress_landmark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignRight="@+id/view10"
+                    android:layout_alignEnd="@+id/view10"
+                    android:layout_marginTop="7dp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailEmail"
+                    android:inputType="textPostalAddress"
+                    android:textSize="15sp"
+                    android:hint="Enter City"
+                    android:textColor="@color/title_text_color"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_below="@+id/orderDetailAddress_landmark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignRight="@+id/orderDetailAddress_landmark"
+                    android:layout_marginTop="18dp"
+                    android:layout_alignParentLeft="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/orderDetailEmail"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_custom_background"
+                android:layout_below="@id/address_details_layout"
+                android:id="@+id/layout2"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag_address_label"
+                    android:textSize="15sp"
+                    android:hint="Enter Label for this Address"
+                    android:textColor="@color/title_text_color"
+                    android:textColorHint="@color/third_text_color"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"  />>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/view_color"
+                    android:layout_below="@+id/tag_address_label"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignRight="@+id/orderMapSymbol"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/view5" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Tag name"-->
+                    <!--android:id="@+id/textTagName"-->
+                    <!--android:textSize="15sp"-->
+
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginTop="10dp"  />-->
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:background="@color/view_color"-->
+                    <!--android:layout_below="@+id/textTagName"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginTop="7dp"-->
+                    <!--android:id="@+id/view11" />-->
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/titleTextColor"
+            android:id="@+id/saveAddressbutton"
+            android:background="@drawable/buttonselector"
+            android:clickable="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</ScrollView>

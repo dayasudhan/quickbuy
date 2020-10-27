@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/hotelinfo_background" android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rating"
+        android:textColor="@color/title_text_color"
+        android:id="@+id/vendor_name_info"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/title_text_color"
+        android:text="Timings"
+        android:id="@+id/ordertimings"
+        android:layout_alignRight="@+id/linear"
+        android:layout_alignEnd="@+id/linear"
+        android:layout_above="@+id/linear"
+        android:layout_alignTop="@+id/vendor_name_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hotel description comes here"
+        android:id="@+id/vendor_speciality_info"
+        android:textColor="@color/title_text_color"
+        android:textSize="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/vendor_name_info"
+        android:layout_alignLeft="@+id/linear"
+        android:layout_alignStart="@+id/linear" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/vendor_speciality_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/vendor_rating_info"
+            android:layout_width="0dp"
+            android:layout_weight=".50"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_text_color"
+            android:text="Rating " />
+
+        <TextView
+            android:id="@+id/vendor_delivery_time_info"
+            android:layout_width="0dp"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"
+
+            android:textSize="12dp"
+            android:textColor="@color/title_text_color"
+            android:text="60 minutes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/title_text_color"
+            android:text="Small Text"
+            android:id="@+id/delievercharge" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/third_text_color"-->
+        <!--android:textSize="13dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:text="Phone"-->
+        <!--android:id="@+id/phone"-->
+        <!--android:layout_below="@+id/vendor_speciality_info"-->
+        <!--android:layout_alignStart="@+id/vendor_speciality_info" />-->
+
+
+    <!--  <View
+        android:layout_width="2dp"
+        android:layout_height="10dp"
+        android:background="#D8D8D8"
+        android:id="@+id/viewleft1"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignBottom="@+id/extra_feature_2"
+        android:layout_toRightOf="@+id/extra_feature_2"
+        android:layout_toEndOf="@+id/extra_feature_2"
+        android:layout_alignTop="@+id/extra_feature_2" />
+   < TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/extra_feature_1"
+        android:layout_below="@+id/minimum_order_val"
+        android:layout_alignLeft="@+id/minimum_order_val"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+
+        android:padding="1dp"
+        android:textColor="#D8D8D8"/>
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/extra_feature_2"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/extra_feature_1"
+        android:layout_toRightOf="@+id/extra_feature_1"
+        android:textSize="12dp"
+
+        android:padding="1dp"
+        android:textColor="#D8D8D8"/>-->
+
+
+
+
+
+</RelativeLayout>

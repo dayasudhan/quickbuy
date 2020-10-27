@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="250dp"
+        android:id="@+id/product_detail_image_view"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/rottioota"
+        android:layout_marginTop="5dip"
+        android:scaleType="fitCenter"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="item name"
+        android:textColor="@color/title_text_color"
+        android:id="@+id/product_detail_name"
+        android:textSize="20sp"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_below="@+id/product_detail_image_view"
+
+        android:gravity="center"
+        android:layout_alignLeft="@+id/product_detail_image_view"
+        android:layout_alignStart="@+id/product_detail_image_view"
+        android:layout_alignRight="@+id/product_detail_image_view"
+        android:layout_alignEnd="@+id/product_detail_image_view"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="price"
+
+        android:id="@+id/approx_price_val"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/product_detail_image_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+
+
+
+    <ImageView
+
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/plus"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/add_btn"
+        android:layout_below="@+id/approx_price_val"
+        android:layout_alignLeft="@+id/sub_btn"
+        android:layout_alignStart="@+id/sub_btn"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/itemdescription"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="17sp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_below="@+id/product_detail_name"
+        android:layout_alignLeft="@+id/product_detail_image_view"
+        android:layout_alignStart="@+id/product_detail_image_view"
+        android:layout_alignRight="@+id/product_detail_image_view"
+        android:layout_alignEnd="@+id/product_detail_image_view" />
+
+    <TextView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:textSize="20sp"
+        android:text="0"
+        android:textColor="@color/text_view_grey"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/add_sub_val"
+        android:editable="true"
+        android:layout_below="@+id/add_btn"
+        android:layout_alignLeft="@+id/sub_btn"
+        android:layout_alignStart="@+id/sub_btn" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/minus"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/sub_btn"
+        android:layout_below="@+id/add_sub_val"
+        android:layout_alignRight="@+id/approx_price_val"
+        android:layout_alignEnd="@+id/approx_price_val" />
+
+
+</RelativeLayout>

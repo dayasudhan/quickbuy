@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tmall="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <!--gagan-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/swypingImage"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                >
+
+                <com.kuruvatech.quickbuy.utils.MyViewPager
+                    android:id="@+id/pager"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:scaleType="fitXY" />
+
+                <com.kuruvatech.quickbuy.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:gravity="bottom|center_horizontal"
+                    tmall:indicator_spacing="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+
+            <!--gagan-->
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imageslider"
+
+        android:id="@+id/order_details_lay"
+            >
+
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView_vendor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/home2"
+                        />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="There are no vendors for this location"
+                                android:id="@+id/textView_no_vendors"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:visibility="invisible"
+                                android:textColor="@color/title_text_color"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textColor="@color/titleTextColor"
+                android:id="@+id/button"
+                android:background="@drawable/buttonselector"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

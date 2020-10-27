@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar2"
+            layout="@layout/toolbar" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/order_details_lay"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/view_color"
+                android:layout_above="@+id/view3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="25dp"
+
+                android:id="@+id/view4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bill total"
+                android:id="@+id/orderbilltotaltext"
+                android:textSize="13sp"
+                android:layout_alignTop="@+id/view4"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Rs.50"
+                android:layout_marginRight="10dp"
+                android:id="@+id/orderbilltotaltextrupees"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/orderbilltotaltext"
+                android:layout_alignParentRight="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_color"
+        android:layout_above="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+
+        android:id="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Delivery charges"
+        android:id="@+id/orderDetailDelivery"
+        android:textSize="13sp"
+        android:layout_alignTop="@+id/view3"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Rs.50"
+        android:layout_marginRight="10dp"
+        android:id="@+id/orderDetailDeliveryRupees"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/orderDetailDelivery"
+        android:layout_alignParentRight="true" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_color"
+        android:id="@+id/view2"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/order_total_charge"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grand Total"
+        android:textSize="14sp"
+        android:id="@+id/orderDetailTotal"
+        android:layout_alignBottom="@+id/order_total_charge"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs.381"
+        android:gravity="center_horizontal"
+        android:textColor="@color/dialy_green"
+        android:textSize="13sp"
+        android:id="@+id/order_total_charge"
+        android:layout_above="@+id/orderDetailButton_next"
+        android:layout_alignRight="@+id/orderDetailDeliveryRupees" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/titleTextColor"
+        android:id="@+id/orderDetailButton_next"
+        android:background="@drawable/buttonselector"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Cart Details "-->
+        <!--android:id="@+id/textvendor_no"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textColor="@color/heading_color"-->
+
+        <!--android:layout_alignLeft="@+id/orderDetailDelivery"-->
+        <!--android:layout_alignStart="@+id/orderDetailDelivery"-->
+        <!--android:layout_alignBottom="@+id/vendor_image_view" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cart Details"
+        android:id="@+id/vendor_add_cart_name"
+        android:textColor="@color/heading_color"
+        android:textSize="20dp"
+        android:layout_marginTop="18dp"
+
+        android:layout_alignLeft="@+id/orderDetailDelivery"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignStart="@+id/orderDetailDelivery"
+        android:layout_alignRight="@+id/orderDetailDeliveryRupees"
+        android:layout_alignEnd="@+id/orderDetailDeliveryRupees" />
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Min Order-Rs300"-->
+        <!--android:id="@+id/min_cart_val"-->
+        <!--android:textSize="12dp"-->
+
+        <!--android:padding="1dp"-->
+        <!--android:textColor="@color/secondary_text_color"-->
+        <!--android:layout_alignTop="@+id/vendor_add_cart_name"-->
+        <!--android:layout_toLeftOf="@+id/order_total_charge"-->
+        <!--android:layout_toStartOf="@+id/order_total_charge" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/view_color"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/view_below_vendor_cart_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/listView_cart" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_cart"
+        android:layout_above="@+id/view4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:divider="#F7F7F7"
+        android:clickable="true"
+        android:drawSelectorOnTop="false"
+        android:dividerHeight="5dp"
+        android:layout_below="@+id/vendor_add_cart_name" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

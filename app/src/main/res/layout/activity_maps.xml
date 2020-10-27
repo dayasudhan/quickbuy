@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/img_header" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/order_details_lay">
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:padding="10dip"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Point pin to your exact delivery location"
+            android:layout_gravity="center_horizontal"
+
+            android:padding="10dip"
+
+            android:id="@+id/textView4"
+            android:layout_above="@+id/placeOrderButton"
+            android:layout_centerHorizontal="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view2"
+            android:layout_height="1dp"
+
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PICK LOCATION"
+            android:textColor="@color/titleTextColor"
+            android:id="@+id/pickaddressbtn"
+            android:background="@drawable/buttonselector"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true" />
+            </RelativeLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Manually"
+                android:background="@drawable/locationbuttonselector"
+                android:id="@+id/buttonEnterManual"
+                android:textColor="#ffffff"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
