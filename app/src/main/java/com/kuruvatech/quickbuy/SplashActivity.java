@@ -26,7 +26,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
         setContentView(R.layout.activity_zoom_in);
 
        // imgPoster = (ImageView) findViewById(R.id.imgLogo);
-        splashImage = (ImageView) findViewById(R.id.food_deliver_bike);
+      //  splashImage = (ImageView) findViewById(R.id.food_deliver_bike);
         splashOneLogo=(ImageView) findViewById(R.id.splashlogo);
 
         // load the animation
@@ -43,7 +43,7 @@ public class SplashActivity extends Activity implements Animation.AnimationListe
             public void run(){
                 try{
                     splashOneLogo.startAnimation(animLogo);
-                    splashImage.startAnimation(animBike);
+                  //  splashImage.startAnimation(animBike);
                     sleep(3000);
 
                 }catch(Exception e){

@@ -301,7 +301,7 @@ public class ProductDetailViewActivity extends AppCompatActivity implements Plus
         catch (java.text.ParseException e) {
             e.printStackTrace();
         }
-        return false;
+        return true;
     }
     public void alertMessage(String message) {
         DialogInterface.OnClickListener dialogClickListeneryesno = new DialogInterface.OnClickListener() {

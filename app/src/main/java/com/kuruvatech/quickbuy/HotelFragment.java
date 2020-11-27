@@ -17,6 +17,8 @@ import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,6 +37,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import com.kuruvatech.quickbuy.adapter.HotelListAdapter;
 import com.kuruvatech.quickbuy.model.HotelDetail;
@@ -79,7 +82,7 @@ public class HotelFragment extends Fragment {
 
 
     private ArrayList<HotelDetail> hotellist;
-    AppCompatImageView listView;
+    ListView listView ;
     TextView textview;
 
     //gagan
@@ -161,44 +164,37 @@ public class HotelFragment extends Fragment {
         //gagan end
 
         textview = (TextView) v.findViewById(R.id.textView_no_vendors);
-        listView = (AppCompatImageView) v.findViewById(R.id.listView_vendor);
+        listView = (ListView) v.findViewById(R.id.listView_vendor);
 
-        listView.setOnClickListener(new View.OnClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                moveNext();
-            }
-        });
-        Button nextButton = (Button) v.findViewById(R.id.button);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                moveNext();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(hotellist.get(position).getIsOpen() !=0) {
+                    Intent i = new Intent(getActivity(), ProductDetailViewActivity.class);
+                    Gson gson = new Gson();
+                    String hotel = gson.toJson(hotellist.get(position));
+                    i.putExtra("hotel", hotel);
+                    if(isBulk() == true)
+                    {
+                        i.putExtra("isBulk","true");
+                    }
+                    else
+                    {
+                        i.putExtra("isBulk","false");
+                    }
+                    startActivity(i);
+                }
+                else
+                {
+                    alertMessage("Delivery for this hotel is not available at this time. kindly try other hotel near by you");
+                }
             }
         });
         setHasOptionsMenu(true);
         return v;
     }
-
-    private void moveNext() {
-        if (hotellist.get(0).getIsOpen() != 0) {
-            Intent i = new Intent(getActivity(), ProductDetailViewActivity.class);
-            Gson gson = new Gson();
-            String hotel = gson.toJson(hotellist.get(0));
-            i.putExtra("hotel", hotel);
-            if (isBulk() == true) {
-                i.putExtra("isBulk", "true");
-            } else {
-                i.putExtra("isBulk", "false");
-            }
-            startActivity(i);
-        } else {
-            alertMessage("Delevery for this hotel is not available at this time. kindly try other hotel near by you");
-        }
-    }
-
-    public void getHotelListByGPS(String latitude, String longitude) {
+    public void getHotelListByGPS(String latitude, String longitude)
+    {
         ((MainActivity) getActivity())
                 .setActionBarTitle(session.getAddress().toString());
         hotellist.clear();
@@ -237,9 +233,9 @@ public class HotelFragment extends Fragment {
     public void initHotelList() {
 
 
-        HotelListAdapter dataAdapter = new HotelListAdapter(getActivity(),
-                R.layout.hotel_list_item, hotellist);
-        //    listView.setAdapter(dataAdapter);
+            HotelListAdapter dataAdapter = new HotelListAdapter(getActivity(),
+                    R.layout.hotel_list_item, hotellist);
+            listView.setAdapter(dataAdapter);
 
         dataAdapter.notifyDataSetChanged();
         if (hotellist.size() > 0) {

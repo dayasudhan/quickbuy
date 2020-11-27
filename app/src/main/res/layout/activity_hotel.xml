@@ -60,7 +60,7 @@
 
 
 
-                        <androidx.appcompat.widget.AppCompatImageView
+                        <ListView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/listView_vendor"
@@ -85,17 +85,7 @@
                                 android:gravity="center"
                                 android:layout_centerHorizontal="true"
                                 android:layout_centerVertical="true" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="NEXT"
-                android:textColor="@color/titleTextColor"
-                android:id="@+id/button"
-                android:background="@drawable/buttonselector"
-                android:layout_marginTop="5dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true" />
+
 
     </RelativeLayout>
     </LinearLayout>

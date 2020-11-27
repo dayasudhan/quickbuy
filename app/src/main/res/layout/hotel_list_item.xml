@@ -32,17 +32,17 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Hotel description comes here"
-        android:id="@+id/vendor_speciality"
-        android:textColor="@color/secondary_text_color"
-        android:textSize="15sp"
-        android:layout_marginTop="3dp"
-        android:layout_below="@+id/vendor_name"
-        android:layout_alignLeft="@+id/vendor_name"
-        android:layout_alignStart="@+id/vendor_name" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="Hotel description comes here"
+    android:id="@+id/vendor_speciality"
+    android:textColor="@color/secondary_text_color"
+    android:textSize="15sp"
+    android:layout_marginTop="3dp"
+    android:layout_below="@+id/vendor_name"
+    android:layout_alignLeft="@+id/vendor_name"
+    android:layout_alignStart="@+id/vendor_name" />
 
     <LinearLayout
         android:id="@+id/linear"

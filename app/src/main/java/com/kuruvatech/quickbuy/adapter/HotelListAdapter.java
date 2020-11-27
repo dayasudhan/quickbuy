@@ -84,7 +84,8 @@ public class HotelListAdapter extends BaseAdapter{
             stars = stars.concat("*");
         }
         itemHolder.hotelRating.setText(stars);
-        itemHolder.hotelSpeciality.setText(mhotelList.get(position).getSpeciality());
+        //itemHolder.hotelSpeciality.setText(mhotelList.get(position).getSpeciality());
+        itemHolder.hotelSpeciality.setText(mhotelList.get(position).getAddress().getAreaName());
         if(mhotelList.get(position).getIsOpen() == 0)
         {
             itemHolder.hotelIsClosed.setText("Closed now");
